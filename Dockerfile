@@ -4,8 +4,8 @@ LABEL authors="vuhso04"
 
 WORKDIR /app
 
-COPY target/*.jar app.jar
+COPY target/account_service-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8081
 
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
